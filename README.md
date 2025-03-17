@@ -16,6 +16,7 @@ minikube delete #Limpar
 minikube dashboard - # Verificar status
 
 2 - SUBINDO AGENT:
+helm ls --all-namespaces #Lista containers heml
 helm install datadog -f values.yaml --set datadog.apiKey=XX datadog/datadog
 
 3 - IMAGEM:
