@@ -16,7 +16,7 @@ minikube delete #Limpar
 minikube dashboard - # Verificar status
 
 2 - SUBINDO AGENT:
-helm install datadog -f values.yaml --set datadog.apiKey=bff83accd780b0a80a4efe161fa76a01 datadog/datadog
+helm install datadog -f values.yaml --set datadog.apiKey=XX datadog/datadog
 
 3 - IMAGEM:
 3.1 eval $(minikube docker-env)
