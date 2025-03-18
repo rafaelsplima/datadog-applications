@@ -450,12 +450,12 @@ datadog:
     # datadog.logs.enabled -- Enables this to activate Datadog Agent log collection
 
     ## ref: https://docs.datadoghq.com/agent/basic_agent_usage/kubernetes/#log-collection-setup
-    enabled: false
+    enabled: true
 
     # datadog.logs.containerCollectAll -- Enable this to allow log collection for all containers
 
     ## ref: https://docs.datadoghq.com/agent/basic_agent_usage/kubernetes/#log-collection-setup
-    containerCollectAll: false
+    containerCollectAll: true
 
     # datadog.logs.containerCollectUsingFiles -- Collect logs from files in /var/log/pods instead of using container runtime API
 
@@ -686,7 +686,7 @@ datadog:
     enabled: true
 
     # datadog.processAgent.processCollection -- Set this to true to enable process collection
-    processCollection: false
+    processCollection: true
 
     # datadog.processAgent.stripProcessArguments -- Set this to scrub all arguments from collected processes
     ## Requires datadog.processAgent.processCollection to be set to true to have any effect
