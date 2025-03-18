@@ -17,7 +17,7 @@ minikube dashboard - # Verificar status
 
 2 - SUBINDO AGENT:
 helm ls --all-namespaces #Lista containers heml
-helm install datadog -f values.yaml --set datadog.apiKey=XX datadog/datadog
+helm install datadog -f values.yaml --set datadog.apiKey=XX datadog/datadog --set datadog.logs.enabled=true
 
 3 - IMAGEM:
 3.1 eval $(minikube docker-env)
